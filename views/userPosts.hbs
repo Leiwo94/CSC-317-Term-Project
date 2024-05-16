@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="appContainers">
+        {{!-- <div class="postHeaderContainer">
+            <div class="postHeaderText">
+                <header>
+                    <h3>
+                        Check out this post!
+                    </h3>
+                </header>
+            </div>
+        </div> --}}
+        <div class="postCommentContainer">
+            <div class="postContainer">
+
+                <div class="viewPostContainer" id="images">
+
+                    <!-- <legend>Newest Post</legend> -->
+
+                    <!-- <legend>Post Information</legend> -->
+
+
+                    <div class="imageDisplayContainer">
+                        <div class="postInfoContainer">
+
+                            <div class="postTitleText">
+                                <p class="postTitle">{{currentPost.title}}</p>
+                            </div>
+                            <div class="postInfoText">
+                                <p class="postAuthor">{{currentPost.username}}</p>
+                                <p class="postDate">{{currentPost.created}}</p>
+                            </div>
+                        </div>
+                        <img class="postImg" src="/{{currentPost.photopath}}" alt="I guess it doesn't live here...">
+
+                        <!-- <legend>Image description</legend> -->
+                        <div class="imageDescriptionContainer">
+                            <div class="imageDescriptionText">
+                                <p class="imageDescription">{{currentPost.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="buttonFieldsetContainer">
+                        <div class="buttonFieldsetContainer">
+                            <fieldset class="buttonsFieldset">
+                                <button class="submitButtonHalf" type="submit" formaction="/imagesubmission">Click here
+                                    to submit a post!</button>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="commentsContainer">
+                <div class="commentContainer">
+                    <div id="comment" class="comment">
+
+                        {{#each currentPost.comments}}
+                        {{>comment this}}
+                        {{/each}}
+
+                    </div>
+
+                    <div class="commentSubmitContainerFull">
+                        <div class="commentSubmitContainer">
+                            <div class="commentTextBoxContainer">
+                                <textarea class="commentTextBox" id="commentTextBox"></textarea>
+                            </div>
+                        </div>
+                        <div class="commentSubmitButtonContainer">
+                            <button class="submitCommentButton" id="submitCommentButton">Submit Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('span[class=date-posted]').forEach((postedDate) => {
+                postedDate.textContent = new Date(postedDate.textContent).toLocaleString();
+            })
+        })
+
+        function addMessage(data) {
+            let template = document.createElement('template');
+            template.innerHTML =
+                `<div id="message-${data.commentId}" class="singlePost">
+                    <strong class="author-text">@${data.username}</strong>
+                    <span class="date-posted">${new Date().toLocaleString()}</span>
+                    <div class="comment-text">${data.comment}</div>
+                </div>`;
+                document.getElementById('comment').firstChild.before(template.content.firstChild);
+        }
+
+        document.getElementById('submitCommentButton').onclick = (event) => {
+            let commentText = document.getElementById('commentTextBox').value;
+            let postId = document.location.pathname.match(/\d+/g).map(Number)[0];
+
+            if (!commentText) {
+                return;
+            }
+            let fetchOptions = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "Application/json"
+                },
+                body: JSON.stringify({
+                    comment: commentText,
+                    postId, postId
+                })
+
+            }
+            fetch('/comments/create', fetchOptions)
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.code == 1) {
+                        addMessage(data);
+                    } else {
+                        addFlashFromFrontEnd(data.message, data.status);
+                    }
+                })
+                .catch(err => console.log(err));
+        }
+
+
+    </script>
+</body>
+
+</html>

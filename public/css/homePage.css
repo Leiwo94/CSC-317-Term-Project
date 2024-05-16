@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+    background: url("../images/llamaBackground6.jpg"), #b281db;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
+}
+
+div.appContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+div.fixedPositions{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+div.imagesContainer{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    position: relative;
+}
+
+div.headerContainer{
+    height: 200px;
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(107, 101, 111, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(68, 68, 68);
+    /* backdrop-filter: blur(0.2em); */
+
+}
+
+header.headerText {
+    font-size: 38px;
+    font-family: copperplate, fantasy;
+    margin: 0px 0px 0px 0px;
+    color: rgb(75, 0, 136);
+}
+
+p.subheaderText {
+    font-size: 20px;
+    color: rgb(209, 153, 255);
+    margin: 2px;
+    font-family: copperplate, fantasy;
+}
+
+.imageDisplay{
+    height: 150px;
+    width:  150px;
+}
+
+div.imageList{
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+div.imagesCount{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 350px;
+    margin-bottom: 25px;
+    /* margin-top: 10px; */
+    background-color: rgba(107, 101, 111, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(68, 68, 68);
+    /* backdrop-filter: blur(0.2em); */
+}
+
+p.imageCount{
+    font-family:  andale mono, monospace;
+    color: rgb(75, 0, 136);
+}
+
+div.imageContainer{
+    /* border-radius: 10px;
+    border: 1px, rgba(107, 101, 111, 0.8); */
+    font-family:  andale mono, monospace;
+    height: 350px;
+    width: 245px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    opacity: 1;
+    transition: opacity 1s ease-out 0s;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+div.titleContainer{
+    max-width: 200px;
+    text-align: center;
+    font-size: 13px;
+}
+
+p.card-text {
+    font-size: 12px;
+}

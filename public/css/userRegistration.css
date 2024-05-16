@@ -1,0 +1,136 @@
+/* body {
+    height: 100vh;
+    background-color: #b281db;
+    overflow: hidden;
+} */
+
+/* div.appContainers{
+    height: 96%;
+    width: 100%;
+    background-image: url("llamabackground6.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+div.registrationContainer{
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+div.registrationFormContainer{
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    background-color: rgba(107, 101, 111, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(68, 68, 68);
+    /* backdrop-filter: blur(0.2em); */
+    margin: 25px;
+}
+
+div.registrationInfoContainer{
+width: 100%;
+}
+
+div.registrationHeaderContainer{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.registrationHeaderText {
+    font-size: 25px;
+    font-family: copperplate, fantasy;
+    margin: 0px 0px 0px 0px;
+    color: rgb(75, 0, 136);
+}
+
+div.registrationPromptContainer{
+    /* border: 2px solid #b281db; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+p.registrationPromptText {
+    font-size: 15px;
+    color: rgb(209, 153, 255);
+    margin: 2px;
+    font-family: copperplate, fantasy;
+}
+
+fieldset.registrationFieldset {
+    display: flex;
+    flex-direction: column;
+    font-family:  andale mono, monospace;
+    border: none;
+}
+
+input.infoInput {
+    font-family:  andale mono, monospace;
+    margin-top: 5px;
+    /* margin-bottom: 15px; */
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 20px;
+    background-color: rgba(82, 67, 94, 0.5);
+}
+
+input.agreementInput {
+    width: 15px;
+    margin-right: 10px;
+}
+
+div.agreementContainerContainer{
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+div.userAgreementsContainer {
+    width: 96%;
+    border: 2px solid #b281db;
+}
+
+fieldset.userAgreementsFieldset {
+    font-family:  andale mono, monospace;
+    border: none;
+}
+
+div.userAgreementsTextContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+p.agreeemntsText {
+    font-family:  andale mono, monospace;
+    font-size: 13px;
+}
+
+div.buttonsContainer {
+    flex-direction: row;
+    width: 100%;
+}
+
+fieldset.regButtonsFieldset {
+    font-family:  andale mono, monospace;
+    border: none;
+}
+
+button.submitButton{
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    padding: 5px;
+}

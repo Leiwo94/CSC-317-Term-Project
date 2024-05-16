@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="appContainer">
+        <div class="registrationContainer">
+            <div id="thing" class="registrationFormContainer">
+
+                <div id="registrationHeaderContainer" class="registrationHeaderContainer">
+                    <header class="registrationHeaderText">
+                        <h3>New User Registration</h3>
+                    </header>
+                </div>
+                <form id="userRegForm" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+                    <div class="registrationInfoContainer" id="registration">
+
+                        <div class="registrationPromptContainer">
+                            <p class="registrationPromptText">Please Enter Registration Information</p>
+                        </div>
+                        <div class="registrationFieldset">
+                            <fieldset class="registrationFieldset">
+                                <!-- <legend>User Information</legend> -->
+                                {{!-- <label for="fname">First Name</label>
+                                
+                                <input id="regFirstName" class="infoInput" type="text" name="First Name" required
+                                    placeholder="First Name" />
+                                <br>
+                                
+                                <label for="lname">Last Name</label>
+                                
+                                <input id="regLastName" class="infoInput" type="text" name="Last Name" required
+                                    placeholder="Last Name" />
+                                <br> --}}
+                                
+                                <label for="email">Email</label>
+                                
+                                <input id="regEmail" class="infoInput" type="email" name="email" required
+                                    placeholder="Email" />
+                                <br>
+                                
+                                <label for="username">Username</label>
+                                
+                                <input id="regUsername" class="infoInput" type="text" name="username" required
+                                    placeholder="Username" />
+                                <br>
+                                
+                                <lable for="password">Password</lable>
+                                
+                                <input id="regPassword" class="infoInput" type="password" name="password" required
+                                    placeholder="Password" />
+                                <br>
+                                
+                                <lable for="confirmPassword">Confirm Password</lable>
+                                
+                                <input id="regConfirmPassword" class="infoInput" type="password" name="confirmPassword"
+                                    required placeholder="Password" />
+                                <br>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="agreementContainerContainer">
+                        <div class="userAgreementsContainer">
+                            <fieldset class="userAgreementsFieldset">
+                                <!-- <legend>Agreements</legend> -->
+                                <p class="agreeemntsText">
+                                    Are you at least <strong>13 years of age</strong>?
+                                </p>
+                                <div class="userAgreementsTextContainer">
+                                    <input class="agreementInput" type="checkbox" required>
+                                    </input>
+                                    <p class="agreeemntsText">
+                                        Yes I am 13 and allowed to use this site.
+                                    </p>
+                                </div>
+                                <p class="agreeemntsText">
+                                    Please <em>read</em> <strong>and</strong> <em>accept</em>
+                                    CSC-317's Terms of Service and Privacy Policy
+                                </p>
+
+                                <div class="userAgreementsTextContainer">
+                                    <input class="agreementInput" type="checkbox" required>
+
+                                    </input>
+                                    <p class="agreeemntsText">
+                                        I have read and accept CSC-317's <a href="#">Terms of Service</a>.
+                                    </p>
+                                </div>
+
+                                <div class="userAgreementsTextContainer">
+                                    <input class="agreementInput" type="checkbox" required>
+
+                                    </input>
+                                    <p class="agreeemntsText">
+                                        I have read and accept CSC-317's <a href="#">Privacy Policy</a>.
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="buttonsContainer">
+                        <fieldset class="regButtonsFieldset">
+                            <!-- <legend>Register New User</legend> -->
+                            <button class="submitButton" type="submit">
+                                Register
+                            </button>
+                        </fieldset>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="/public/js/userRegistration.js"></script>
+</html>

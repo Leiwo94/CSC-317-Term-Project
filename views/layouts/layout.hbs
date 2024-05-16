@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/homePage.css">
+    <link rel="stylesheet" href="/public/css/imageSubmission.css">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <link rel="stylesheet" href="/public/css/userPosts.css">
+    <link rel="stylesheet" href="/public/css/userRegistration.css">
+    <link rel="stylesheet" href="/public/css/partials.css">
+    
+    <title>Lei's Llama Image Collection</title>
+</head>
+  <body>
+    <div id="container">
+    {{> banner}}
+    {{> navbar}}
+    {{#if (emptyObject messages)}}
+    {{> flashmessage}}
+    {{/if}}
+    {{{body}}}
+    {{>footer}}
+    </div>
+
+
+    {{#if logged}}
+      <script>
+        let ele = document.getElementById('logoutbutton');
+        if(ele){
+          ele.onclick = (even) => {
+            fetch('/users/logout', {
+              method: "POST"
+            })
+            .then((data) => {
+              location.replace('/');
+            })
+          }
+        }
+      </script>
+    {{/if}}
+  </body>
+  <scripts>
+    <script type="text/javascript" src="/public/js/frontend.js"></script>
+</scripts>
+</html>

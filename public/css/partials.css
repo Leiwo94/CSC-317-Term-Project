@@ -1,0 +1,278 @@
+/* Footer CSS */
+
+div.footer-basic {
+    /* padding: 5px 0; */
+    background-color: rgba(107, 101, 111, 0.8);
+    /* border-radius: 10px; */
+    color: #020202;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.listContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+div.navList {
+    position: relative;
+}
+
+ul.list-inline {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+div.authorInfo {
+    position: relative;
+}
+
+ul.authorInfo {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.authorInlineItem {
+    padding: 0 10px;
+}
+
+li.list-inline-item {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+p.termProject {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+
+/* NavBar CSS */
+
+div.navRightItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 225px;
+    margin-right: 10px;
+    justify-content: space-between;
+
+}
+
+
+div.navLeftItems {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 225px;
+    justify-content: space-between;
+
+}
+
+div.topNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: rgba(107, 101, 111, 0.8);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+a.navLinkHome {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    background-color: rgba(107, 101, 111);
+    font-family: copperplate, fantasy;
+    color: rgb(75, 0, 136);
+    font-size: 14px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+div.searchBar {
+    position: relative;
+    width: 55%;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-family: copperplate, fantasy;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.search-text {
+    font-family: andale mono, monospace;
+    margin-top: 5px;
+    width: 85%;
+    /* border: 1px solid black; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: none;
+    border-radius: 0px;
+    height: 20px;
+    background-color: rgba(82, 67, 94, 0.5);
+}
+
+i.navSearchButton {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-image: url("../images/searchbutton.png"); */
+    background-color: rgba(107, 101, 111);
+    width: 10%;
+    height: 64%;
+    margin-top: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: none;
+    font-size: 12px;
+}
+
+a.navLinkSubmitPost {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 14px;
+    background-color: rgba(107, 101, 111);
+    color: rgb(75, 0, 136);
+    font-family: copperplate, fantasy;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+
+a.navLinkPosts {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 14px;
+    background-color: rgba(107, 101, 111);
+    color: rgb(75, 0, 136);
+    font-family: copperplate, fantasy;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+a.navLinkLoginLogout {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    padding-top: 10px;
+    background-color: rgba(107, 101, 111);
+    color: rgb(75, 0, 136);
+    font-family: copperplate, fantasy;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+a.navLinkLogout {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 13px;
+    padding-top: 10px;
+    background-color: rgba(107, 101, 111);
+    color: rgb(75, 0, 136);
+    font-family: copperplate, fantasy;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* Banner CSS */
+
+div.banner {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* Login Login/Logout Flash CSS */
+
+#flash-message {
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+}
+
+#flash-message div {
+    padding: 5px;
+    background-color: rgba(107, 101, 111);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Banner code */
+
+span.banner-flex-item {
+    color: rgb(75, 0, 136);
+    font-family: copperplate, fantasy;
+    font-size: 50px;
+}

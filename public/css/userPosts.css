@@ -1,0 +1,278 @@
+/* body {
+    height: 100vh;
+    background-color: #b281db;
+    overflow: hidden;
+} */
+
+div.appContainers {
+    /*
+    width: 100%;
+    background-image: url("llamabackground6.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-bottom: 15px; */
+}
+
+div.postCommentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.postContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.postHeaderContainer {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.postHeaderText {
+    font-size: 25px;
+    font-family: copperplate, fantasy;
+    margin: 0px 0px 0px 0px;
+    color: rgb(75, 0, 136);
+}
+
+div.viewPostContainer {
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(107, 101, 111, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(68, 68, 68);
+    /* backdrop-filter: blur(0.2em); */
+}
+
+div.postInfoContainer {
+    margin: 0px 0px 5px 0px;
+    /* border: 2px solid #b281db; */
+}
+
+div.postTitleText {
+    margin: 10px;
+    font-size: 20px;
+    font-family: copperplate, fantasy;
+    /* margin: 0px 0px 0px 0px; */
+    color: rgb(75, 0, 136);
+}
+
+p.postAuthor {
+    font-family: andale mono, monospace;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+p.postDate {
+    font-family: andale mono, monospace;
+    margin-top: 2px;
+    margin-left: 10px;
+
+}
+
+img.postImg {
+    margin: 5px auto;
+    border: 2px solid #b281db;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+div.imageDescriptionText {
+    font-family: andale mono, monospace;
+}
+
+p.imageDescription {
+    margin: 5px 0px 5px 10px;
+}
+
+div.buttonFieldsetContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form.buttonFieldsetContainer {
+    width: 100%;
+}
+
+fieldset.buttonsFieldset {
+    width: 86%;
+    margin: 0px 0px 0px 0px;
+    font-family: andale mono, monospace;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+button.submitButtonHalf {
+    width: 100%;
+    margin: 5px 5px 9px 0px;
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+/* button.registerButtonHalf{
+    
+        width: 50%;
+        margin: 5px 0px 9px 5px;
+        background-color: mediumpurple;
+        color: white;
+        border: none;
+        padding: 5px;
+    
+} */
+
+/* CSS for comment Boxes */
+
+div.commentsContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.commentContainer {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(107, 101, 111, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(68, 68, 68);
+}
+
+.comment {
+    display: block;
+    transition: all 1s;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: scroll;
+}
+
+div[id^=message-] {
+    width: 90%;
+    font-family: andale mono, monospace;
+    color: rgb(75, 0, 136);
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+.author-text {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-family: copperplate, fantasy;
+    /* margin: 0px 0px 0px 0px; */
+    color: rgb(75, 0, 136);
+}
+
+.date-posted {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #b281db;
+}
+
+textarea.commentTextBox {
+    font-family: andale mono, monospace;
+    margin-top: 5px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 90%;
+    background-color: rgba(82, 67, 94, 0.5);
+    display: flex;
+    align-items: flex-start;
+}
+
+.commentClicked {
+    min-height: 0px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px 10px
+}
+
+button.submitCommentButton {
+    width: 91%;
+    height: 25px;
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor:pointer;
+
+}
+
+
+/* button.primaryContained:hover {
+	background: #9201A8;
+} */
+
+div.commentSubmitContainerFull {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.commentSubmitContainer {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+div.commentTextBoxContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.commentSubmitButtonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

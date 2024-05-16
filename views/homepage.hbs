@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="appContainer">
+        <div class="fixedPositions">
+            {{!-- <div class="headerContainer">
+                <div class="headerText">
+                    <header class="headerText">
+                        Llama Lovers Homepage!
+                    </header>
+                </div>
+                <div class="subheaderContainer">
+                    <div class="subheaderText">
+                        <p class="subheaderText">See our newest submissions!</p>
+                    </div>
+                </div>
+            </div> --}}
+
+            {{!-- <div class="imagesCount" id="imagesCount">
+                <p class="imageCount" id="imageCount"></p>
+            </div> --}}
+        </div>
+        <div class="imagesContainer" id="imagesContainer">
+            {{!-- <div id="imagesLoading">
+                loading
+            </div> --}}
+
+            <div class="imageList" id="imageList">
+                {{#each results}}
+                {{>card this}}
+                {{/each}}
+            </div>
+        </div>
+
+    </div>
+</body>
+<scripts>
+    <script type="text/javascript" src="/public/js/homePage.js"></script>
+    
+</scripts>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="appContainer">
+        <div class="submissionContainer">
+            <div class="submissionHeaderContainer">
+                <div class="submissionHeaderText">
+                    <header>
+                        <h3>
+                            Submit Your Image!
+                        </h3>
+                    </header>
+                </div>
+            </div>
+            <div class="submissionPromptContainer">
+                <div class="submissionPromptText">
+                    <p>Image submissions here! Make it something good!</p>
+                </div>
+            </div>
+
+            <div class="submissionFormContainer">
+                <form id="post-image" class="post-image-form" method="POST" enctype="multipart/form-data" action='/posts/createPost'>
+                    <div class="submissionFieldsetContainer">
+                        <fieldset class="submissionFieldset">
+                            <!-- <legend>Submissions</legend> -->
+                            <div class="submissionInfo">
+                                <label for="imagetitle">
+                                    Image Title
+                                </label>
+                                <br>
+                                <input class="submissionInput" type="text" name="title" required
+                                    placeholder="Post Title Here" />
+                                <br>
+                                <br>
+                                <lable for="description">
+                                    Image description
+                                </lable>
+                                <br>
+                                <input class="submissionInput" type="text" name="description" required
+                                    placeholder="Image description Here">
+
+                                <br>
+                                <p class="imageSubmissionLabel" for="imagesubmission">
+                                    Upload Image Here
+                                </p>
+                                <br>
+                                <div class="fileSelection">
+                                    <input type="file" name="uploadImage">
+                                </div>
+                                <br>
+                                <p class="policyAccept" for="policyaccept">
+                                    Please read and accept our <a href="#">Acceptable Use Policy</a>
+                                </p>
+                                
+                                <div class="submissionAgreement">
+                                    <input class="submissionAgreement" type="checkbox" name="policyaccept" required>
+                                    </input>
+                                    <p>
+                                        I have read and accept CSC-317's Acceptable Use Policy.
+                                    </p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="buttonsFieldsetContainer">
+                        <fieldset class="subButtonsFieldset">
+                            <button class="submitButtonsHalf" type="submit">Submit Post</button>
+                            <button class="resetButtonHalf" type="reset">Clear Form</button>
+                            <br>
+
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

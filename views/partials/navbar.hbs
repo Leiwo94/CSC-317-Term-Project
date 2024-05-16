@@ -1,0 +1,23 @@
+<div class="topNav">
+  <div class="navLeftItems">
+    <a class="navLinkHome" href="/">Home</a>
+    <a class="navLinkPosts" href="/post/randomPost">Random Post</a>
+    {{!-- <button class="navLinkPosts" onclick="getRandomPost()">View Posts</a> --}}
+
+  </div>
+  <div class="searchBar">
+    <input id="search-text" class="search-text" name="search-text" type="text" placeholder="Search..">
+    <i id="search-button" class="navSearchButton" onclick="executeSearch()">Search</i>
+  </div>
+
+  <div class="navRightItems">
+    {{log this}}
+    <a class="navLinkSubmitPost" href="/imageSubmission">Post Image</a>
+    {{#if logged}}
+    <a class="navLinkLogout" id="logoutbutton">Logout</a>
+    {{else}}
+    <a class="navLinkLoginLogout" id="loginbutton" href="/login">Login</a>
+    {{/if}}
+
+  </div>
+</div>

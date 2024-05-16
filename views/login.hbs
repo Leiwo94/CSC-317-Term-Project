@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>    
+    <div class="appContainers">
+    <div class="loginContainer">
+    <div id="loginFormContainer" class="loginFormContainer">
+        <div class="welcomeMessageContainer">
+            <header class="welcomeMessageText"><h3>Oh hey! You're here!</h3></header>
+        </div>
+        <div class="loginPromptContainer">
+            <p class="loginPromptText">Please Login</p>
+        </div>
+        
+        <form id="loginForm" class="loginFormMain" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
+            <fieldset class="loginFieldset">
+                <label for="username">Username</label>
+                <br>
+                <input id="usernameField" class="usernameField" type="text" name="username" required placeholder="Username"/>
+                <br>
+                <br>
+                <label for="password">Password</lable>
+                <br>
+                <input id="passwordField" class="passwordField" type="password" name="password" required placeholder="Password">
+                <a class="forgotPasswordPrompt" href="#">Forgot Password?</a>
+                <br>
+                <button id="submitButton" class="submitButton" type="submit">Login</button>
+                <!-- <button id="clearButton" class="clearButton" type="reset">Clear</button> -->
+                <br>
+                <a href="/userRegistration">Don't have an account? Register one right now!</a>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</div>
+</body>
+</html>
